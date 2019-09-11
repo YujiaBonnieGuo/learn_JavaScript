@@ -69,3 +69,10 @@ function abs(x) {
         return -x;
     }
 };
+
+function foo(x) {
+    console.log('x = ' + x); // 10
+    for (var i=0; i<arguments.length; i++) {
+        console.log('arg ' + i + ' = ' + arguments[i]); // 10, 20, 30
+    }
+};

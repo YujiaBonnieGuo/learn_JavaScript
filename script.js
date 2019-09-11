@@ -21,3 +21,5 @@ m.has('Adam'); // 是否存在key 'Adam': true
 m.get('Adam'); // 67
 m.delete('Adam'); // 删除key 'Adam'
 m.get('Adam'); // undefined
+var s1 = new Set(); // 空Set
+var s2 = new Set([1, 2, 3]); // 含1, 2, 3

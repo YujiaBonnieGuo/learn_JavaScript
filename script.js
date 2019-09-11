@@ -76,3 +76,10 @@ function foo(x) {
         console.log('arg ' + i + ' = ' + arguments[i]); // 10, 20, 30
     }
 };
+function abs() {
+    if (arguments.length === 0) {
+        return 0;
+    }
+    var x = arguments[0];
+    return x >= 0 ? x : -x;
+}

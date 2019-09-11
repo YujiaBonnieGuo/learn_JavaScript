@@ -30,3 +30,23 @@ s.add(4);
 s; // Set {1, 2, 3, 4}
 s.add(4);
 s; // 仍然是 Set {1, 2, 3, 4}
+
+var a = [1, 2, 3];
+for (var x of a) 
+{
+    console.log(x);
+}
+
+
+var a = ['A', 'B', 'C'];
+var s = new Set(['A', 'B', 'C']);
+var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+for (var x of a) { // 遍历Array
+    console.log(x);
+}
+for (var x of s) { // 遍历Set
+    console.log(x);
+}
+for (var x of m) { // 遍历Map
+    console.log(x[0] + '=' + x[1]);
+}

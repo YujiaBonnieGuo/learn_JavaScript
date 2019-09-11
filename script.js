@@ -50,3 +50,11 @@ for (var x of s) { // 遍历Set
 for (var x of m) { // 遍历Map
     console.log(x[0] + '=' + x[1]);
 }
+
+function abs(x) {
+    if (x >= 0) {
+        return x;
+    } else {
+        return -x;
+    }
+};

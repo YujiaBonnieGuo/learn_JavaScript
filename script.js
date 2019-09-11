@@ -26,3 +26,7 @@ var s1 = new Set(); // 空Set
 var s2 = new Set([1, 2, 3]); // 含1, 2, 3
 var s = new Set([1, 2, 3, 3, '3']);
 s; // Set {1, 2, 3, "3"}
+s.add(4);
+s; // Set {1, 2, 3, 4}
+s.add(4);
+s; // 仍然是 Set {1, 2, 3, 4}

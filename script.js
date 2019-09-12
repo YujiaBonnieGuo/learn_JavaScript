@@ -83,3 +83,23 @@ function abs() {
     var x = arguments[0];
     return x >= 0 ? x : -x;
 }
+
+//获取除ab以外的参数
+function foo(a, b) {
+    var i, rest = [];
+    if (arguments.length > 2) {
+        for (i = 2; i<arguments.length; i++) {
+            rest.push(arguments[i]);
+        }
+    }
+    console.log('a = ' + a);
+    console.log('b = ' + b);
+    console.log(rest);
+}
+
+//可以改写为
+function foo(a, b, ...rest) {
+    console.log('a = ' + a);
+    console.log('b = ' + b);
+    console.log(rest);
+}

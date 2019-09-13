@@ -103,3 +103,14 @@ function foo(a, b, ...rest) {
     console.log('b = ' + b);
     console.log(rest);
 }
+
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school'
+};
+var {name, age, passport} = person;
+// name, age, passport分别被赋值为对应属性:
+console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);

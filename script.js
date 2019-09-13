@@ -114,3 +114,6 @@ var person = {
 var {name, age, passport} = person;
 // name, age, passport分别被赋值为对应属性:
 console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
+
+var x=1, y=2;
+[x, y] = [y, x]

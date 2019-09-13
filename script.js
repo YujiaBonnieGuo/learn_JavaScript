@@ -122,7 +122,7 @@ var x=1, y=2;
 
 var xiaoming = {
     name: '小明',
-    birth: 1990,
+    birth: 1994,
     age: function () {
         var y = new Date().getFullYear();
         return y - this.birth;

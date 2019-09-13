@@ -115,5 +115,19 @@ var {name, age, passport} = person;
 // name, age, passport分别被赋值为对应属性:
 console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
 
+
 var x=1, y=2;
 [x, y] = [y, x]
+
+
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+};
+
+xiaoming.age; // function xiaoming.age()
+xiaoming.age(); // 今年调用是25,明年调用就变成26了

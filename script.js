@@ -144,3 +144,14 @@ arr.sort(function (s1, s2) {
     }
     return 0;
 });
+
+var arr = [10, 20, 1, 2];
+arr.sort(function (x, y) {
+    if (x < y) {
+        return 1;
+    }
+    if (x > y) {
+        return -1;
+    }
+    return 0;
+}); // [20, 10, 2, 1]

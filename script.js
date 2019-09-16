@@ -166,3 +166,5 @@ arr.sort(function (x, y) {
     }
     return 0;
 }); // [20, 10, 2, 1]
+var arr = ['Apple', 'pear', 'orange'];
+arr.forEach(console.log); // 依次打印每个元素

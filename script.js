@@ -132,6 +132,17 @@ var xiaoming = {
 xiaoming.age; // function xiaoming.age()
 xiaoming.age(); // 今年调用是25,明年调用就变成26了
 
+
+// 看上去正常的结果:
+['Google', 'Apple', 'Microsoft'].sort(); // ['Apple', 'Google', 'Microsoft'];
+
+// apple排在了最后:
+['Google', 'apple', 'Microsoft'].sort(); // ['Google', 'Microsoft", 'apple']
+
+// 无法理解的结果:
+[10, 20, 1, 2].sort(); // [1, 10, 2, 20]
+
+
 var arr = ['Google', 'apple', 'Microsoft'];
 arr.sort(function (s1, s2) {
     x1 = s1.toUpperCase();

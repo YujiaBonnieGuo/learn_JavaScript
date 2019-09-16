@@ -168,3 +168,13 @@ arr.sort(function (x, y) {
 }); // [20, 10, 2, 1]
 var arr = ['Apple', 'pear', 'orange'];
 arr.forEach(console.log); // 依次打印每个元素
+
+
+// 可变参数:
+(x, y, ...rest) => {
+    var i, sum = x + y;
+    for (i=0; i<rest.length; i++) {
+        sum += rest[i];
+    }
+    return sum;
+}

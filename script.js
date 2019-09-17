@@ -188,3 +188,30 @@ var obj = {
     }
 };
 obj.getAge(); // 25
+
+// fibonaci function
+function fib(max){
+	var
+	t,
+	b=1,
+	arr=[0,1];
+	while(arr.length<max){
+		[a,b]=[b,a+b];
+		arr.push(b)
+	}
+	return arr;
+}
+
+function* fib(max){
+	var
+	t,
+	a=0,
+	b=1,
+	n=0;
+	while(n<max){
+		yield a;
+		[a,b]=[b,a+b];
+		n++;
+	}
+	return;
+}

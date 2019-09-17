@@ -215,3 +215,42 @@ function* fib(max){
 	}
 	return;
 }
+
+function* fib(max){
+	var
+	t,
+	a=0,
+	b=1,
+	n=0;
+	while(n<max){
+		yield a ;
+		[a,b]=[b,a+b];
+		n++
+	}
+	return;
+}
+for(var x of fib(10)){
+	console.log(x)
+}
+/**因为generator可以在执行过程中多次返回，
+所以它看上去就像一个可以记住执行状态的函数，
+利用这一点，写一个generator就可以实现需要用面向对象
+才能实现的功能。例如，用一个对象来保存状态，得这么写：*/
+var fib={
+	a:0,
+	b:1,
+	n:0,
+	max:5,
+	next: function(){
+		var
+		r=this.r,
+		t=this.a+this.b;
+		this.a=this.b;
+		this.b=t;
+		if(this.n<this.max){
+			this.n++;
+			return r;
+		}
+		else{return undefined};
+	}
+}

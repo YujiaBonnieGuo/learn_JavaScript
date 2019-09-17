@@ -1,1 +1,2 @@
 dummy
+Only push to master branch could contribute green points

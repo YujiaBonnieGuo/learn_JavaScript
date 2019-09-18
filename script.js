@@ -254,3 +254,13 @@ var fib={
 		else{return undefined};
 	}
 }
+/*generator还有另一个巨大的好处，
+就是把异步回调代码变成“同步”代码。
+这个好处要等到后面学了AJAX以后才能体会到。
+*/
+
+if (confirm('重新加载当前页' + location.href + '?')) {
+    location.reload();
+} else {
+    location.assign('/'); // 设置一个新的URL地址
+}

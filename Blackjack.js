@@ -179,7 +179,11 @@ function showStatus() {
   for (let i=0; i < dealerCards.length; i++) {
     dealerCardString += getCardString(dealerCards[i]) + '\n';
   }
-
+  
+  let playerCardString = '';
+  for (let i=0; i < playerCards.length; i++) {
+    playerCardString += getCardString(playerCards[i]) + '\n';
+  }
   
   updateScores();
    

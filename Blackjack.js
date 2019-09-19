@@ -196,16 +196,7 @@ function showStatus() {
     playerCardString +
     '(score: '+ playerScore  + ')\n\n';
   
-  if (gameOver) {
-    if (playerWon) {
-      textArea.innerText += "YOU WIN!";
-    }
-    else {
-      textArea.innerText += "DEALER WINS";
-    }
-    newGameButton.style.display = 'inline';
-    hitButton.style.display = 'none';
-    stayButton.style.display = 'none';
+
   }
 
 }

@@ -1,3 +1,5 @@
+// hello.js
+
 function hello() {
     console.log('Hello, world!');
 }
@@ -6,7 +8,9 @@ function greet(name) {
     console.log('Hello, ' + name + '!');
 }
 
-module.exports = {
-    hello: hello,
-    greet: greet
-};
+function hello() {
+    console.log('Hello, world!');
+}
+
+exports.hello = hello;
+exports.greet = greet;

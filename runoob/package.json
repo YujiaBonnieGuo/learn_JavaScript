@@ -2,39 +2,15 @@
   "name": "express",
   "description": "Fast, unopinionated, minimalist web framework",
   "version": "4.13.3",
-  "author": {
-    "name": "TJ Holowaychuk",
-    "email": "tj@vision-media.ca"
-  },
+  "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "contributors": [
-    {
-      "name": "Aaron Heckmann",
-      "email": "aaron.heckmann+github@gmail.com"
-    },
-    {
-      "name": "Ciaran Jessup",
-      "email": "ciaranj@gmail.com"
-    },
-    {
-      "name": "Douglas Christopher Wilson",
-      "email": "doug@somethingdoug.com"
-    },
-    {
-      "name": "Guillermo Rauch",
-      "email": "rauchg@gmail.com"
-    },
-    {
-      "name": "Jonathan Ong",
-      "email": "me@jongleberry.com"
-    },
-    {
-      "name": "Roman Shtylman",
-      "email": "shtylman+expressjs@gmail.com"
-    },
-    {
-      "name": "Young Jae Sim",
-      "email": "hanul@hanul.me"
-    }
+    "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
+    "Ciaran Jessup <ciaranj@gmail.com>",
+    "Douglas Christopher Wilson <doug@somethingdoug.com>",
+    "Guillermo Rauch <rauchg@gmail.com>",
+    "Jonathan Ong <me@jongleberry.com>",
+    "Roman Shtylman <shtylman+expressjs@gmail.com>",
+    "Young Jae Sim <hanul@hanul.me>"
   ],
   "license": "MIT",
   "repository": {
@@ -113,13 +89,12 @@
     "test": "mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/",
     "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/",
-    "test-tap": "mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/"
+    "test-tap": "mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/",
+    "start": "node server.js"
   },
-  "gitHead": "ef7ad681b245fba023843ce94f6bcb8e275bbb8e",
   "bugs": {
     "url": "https://github.com/strongloop/express/issues"
   },
-  "_id": "express@4.13.3",
   "_shasum": "ddb2f1fb4502bf33598d2b032b037960ca6c80a3",
   "_from": "express@*",
   "_npmVersion": "1.4.28",
@@ -128,34 +103,13 @@
     "email": "doug@somethingdoug.com"
   },
   "maintainers": [
-    {
-      "name": "tjholowaychuk",
-      "email": "tj@vision-media.ca"
-    },
-    {
-      "name": "jongleberry",
-      "email": "jonathanrichardong@gmail.com"
-    },
-    {
-      "name": "dougwilson",
-      "email": "doug@somethingdoug.com"
-    },
-    {
-      "name": "rfeng",
-      "email": "enjoyjava@gmail.com"
-    },
-    {
-      "name": "aredridel",
-      "email": "aredridel@dinhe.net"
-    },
-    {
-      "name": "strongloop",
-      "email": "callback@strongloop.com"
-    },
-    {
-      "name": "defunctzombie",
-      "email": "shtylman@gmail.com"
-    }
+    "tjholowaychuk <tj@vision-media.ca>",
+    "jongleberry <jonathanrichardong@gmail.com>",
+    "dougwilson <doug@somethingdoug.com>",
+    "rfeng <enjoyjava@gmail.com>",
+    "aredridel <aredridel@dinhe.net>",
+    "strongloop <callback@strongloop.com>",
+    "defunctzombie <shtylman@gmail.com>"
   ],
   "dist": {
     "shasum": "ddb2f1fb4502bf33598d2b032b037960ca6c80a3",
@@ -163,5 +117,5 @@
   },
   "directories": {},
   "_resolved": "https://registry.npmjs.org/express/-/express-4.13.3.tgz",
-  "readme": "ERROR: No README data found!"
+  "main": "hello.js"
 }
